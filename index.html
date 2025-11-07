@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamBox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="logo">StreamBox</div>
+      <nav class="nav__links">
+        <a href="#popular">Popular</a>
+        <a href="#top-rated">Top Rated</a>
+        <a href="#new">New Releases</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="btn btn--outline">Sign In</button>
+        <button class="btn btn--primary">Join Now</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1>Unlimited films, series and more.</h1>
+          <p>Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
+          <form class="hero__form" id="cta-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+            <button type="submit" class="btn btn--primary">Get Started</button>
+          </form>
+          <p class="hero__message" id="hero-message" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="row" id="popular">
+        <h2>Popular on StreamBox</h2>
+        <div class="row__items">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1542206395-9feb3edaa68c?auto=format&fit=crop&w=500&q=80" alt="City skyline at night" />
+            <h3>Midnight Streets</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=500&q=80" alt="Spaceship above a planet" />
+            <h3>Galactic Frontier</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=500&q=80" alt="Group of friends laughing" />
+            <h3>Friends Forever</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1458640904116-093b74971de9?auto=format&fit=crop&w=500&q=80" alt="Superhero standing on a building" />
+            <h3>The Guardian</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="row" id="top-rated">
+        <h2>Top Rated</h2>
+        <div class="row__items">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=500&q=80" alt="Mountain range at sunset" />
+            <h3>High Peak</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="Detective with magnifying glass" />
+            <h3>The Investigator</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" alt="Hacker typing on keyboard" />
+            <h3>Encrypted</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80" alt="Fantasy castle" />
+            <h3>Realm of Wonders</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="row" id="new">
+        <h2>New Releases</h2>
+        <div class="row__items">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1489599849280-517afee6b16b?auto=format&fit=crop&w=500&q=80" alt="Couple dancing" />
+            <h3>Last Dance</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=500&q=80" alt="Soldier in futuristic armor" />
+            <h3>Unit X</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=500&q=80" alt="Standup comedian on stage" />
+            <h3>Stage Lights</h3>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?auto=format&fit=crop&w=500&q=80" alt="Animated robot" />
+            <h3>Robo-Buddy</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Questions? Call 000-800-040-1843</p>
+      <div class="footer__links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+      </div>
+      <p class="footer__note">StreamBox &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
